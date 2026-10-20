@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f5">
+<title>Một món quà nhỏ gửi cậu 💗 | VHNT</title>
+<style>
+:root{--pink:#ff78a8;--hot:#ed4f88;--rose:#b83b70;--cream:#fff9f5;--ink:#74344e;--lilac:#f2e8ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS",system-ui,-apple-system,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 15%,#fff 0 4%,transparent 28%),radial-gradient(circle at 90% 10%,#ffe0ed 0 5%,transparent 30%),linear-gradient(145deg,#fff6f8,#fff0e9 55%,#f9efff);overflow-x:hidden}
+main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px 16px;position:relative}
+.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.sparkles span{position:absolute;animation:float 5s ease-in-out infinite;opacity:.75}
+.sparkles span:nth-child(1){left:7%;top:18%;font-size:25px}.sparkles span:nth-child(2){right:9%;top:23%;font-size:20px;animation-delay:1s}.sparkles span:nth-child(3){left:12%;bottom:15%;font-size:23px;animation-delay:2s}.sparkles span:nth-child(4){right:13%;bottom:12%;font-size:28px;animation-delay:.6s}.sparkles span:nth-child(5){left:25%;top:8%;font-size:16px;animation-delay:1.7s}.sparkles span:nth-child(6){right:25%;bottom:7%;font-size:17px;animation-delay:2.4s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-13px) rotate(8deg)}}
+.wrap{width:min(100%,650px);text-align:center;position:relative;z-index:1}
+.eyebrow{display:inline-block;border:1px solid #ffc1d7;background:#ffffffb8;border-radius:999px;padding:8px 15px;font-size:12px;letter-spacing:2px;font-weight:800;color:#cf4c80}
+h1{font-family:Georgia,serif;font-size:clamp(32px,7vw,52px);line-height:1.1;margin:17px 0 10px;color:#a83768;font-weight:700}
+.sub{font-size:15px;line-height:1.7;max-width:440px;margin:0 auto;color:#9c6378}
+.gift-stage{height:260px;display:flex;align-items:center;justify-content:center;position:relative;margin:8px auto 0}
+.gift{width:190px;height:155px;position:relative;cursor:pointer;filter:drop-shadow(0 17px 15px #c74f7930);transition:transform .25s}
+.gift:hover{transform:translateY(-5px) rotate(-1deg)}
+.gift-box{position:absolute;bottom:0;left:10px;width:170px;height:112px;border-radius:9px 9px 14px 14px;background:linear-gradient(110deg,#ff8ab4,#f45b92);border:2px solid #e64c83}
+.gift-box:before{content:"";position:absolute;left:66px;top:0;width:34px;height:100%;background:linear-gradient(90deg,#ffe7a9,#fff5cf,#ffd775)}
+.lid{position:absolute;left:0;top:25px;width:190px;height:37px;border-radius:8px;background:linear-gradient(#ffb1cd,#ff75a5);border:2px solid #e64c83;z-index:3;transform-origin:15% 90%;transition:transform .8s cubic-bezier(.2,.8,.2,1),top .8s}
+.lid:before{content:"";position:absolute;left:75px;top:0;width:34px;height:100%;background:linear-gradient(90deg,#ffe7a9,#fff5cf,#ffd775)}
+.bow{position:absolute;z-index:4;top:0;left:72px;width:47px;height:31px}
+.bow:before,.bow:after{content:"";position:absolute;width:25px;height:20px;border:6px solid #ffcfdf;border-radius:80% 80% 30% 80%;top:1px}
+.bow:before{left:-1px;transform:rotate(24deg)}.bow:after{right:-1px;transform:scaleX(-1) rotate(24deg)}
+.bow i{position:absolute;left:18px;top:13px;width:13px;height:13px;border-radius:50%;background:#ffe7a9;z-index:2}
+.gift.open .lid{transform:translate(-8px,-68px) rotate(-18deg);top:0}
+.gift.open{transform:translateY(9px)}
+.gift.open .bow{transform:translate(-7px,-67px) rotate(-18deg);transition:transform .8s}
+.gift.open .gift-box{animation:glow .9s ease}
+@keyframes glow{50%{filter:brightness(1.15)}}
+.gift-hint{font-size:13px;color:#c0527d;margin-top:-9px;font-weight:700;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.55}}
+.card{display:none;text-align:left;background:#fffdfb;border:1px solid #ffd6e4;border-radius:22px;padding:clamp(20px,5vw,34px);box-shadow:0 18px 55px #bd53731c;margin:12px auto 0;animation:appear .7s ease;position:relative}
+.card.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+.card:before{content:"♡";position:absolute;right:20px;top:12px;font-size:35px;color:#ffd0e1}
+.card h2{font-family:Georgia,serif;font-size:26px;line-height:1.3;color:#b83b70;margin:0 36px 18px 0}
+.card p{font-size:15px;line-height:1.85;margin:0 0 14px;color:#704457}
+.card .ending{background:#fff0f6;border-radius:15px;padding:15px;text-align:center;color:#bd3d75;font-weight:800;line-height:1.8;margin-top:18px}
+.signature{text-align:center;font-size:12px;letter-spacing:1.4px;color:#c36a8b;margin:24px 0 0}
+.btn{border:0;border-radius:999px;padding:12px 20px;background:#f45b92;color:white;font-weight:800;cursor:pointer;box-shadow:0 7px 18px #f45b9238;font-size:14px;margin-top:17px}
+.btn:hover{background:#dc427b}
+.hidden{display:none!important}
+.footer{font-size:11px;color:#bd8198;margin-top:18px}
+.confetti{position:fixed;top:-20px;z-index:5;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:.2}}
+@media(max-width:420px){.gift-stage{height:235px}.card p{font-size:14px}.sub{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="sparkles" aria-hidden="true"><span>✦</span><span>♡</span><span>✿</span><span>✧</span><span>♡</span><span>✦</span></div>
+<main>
+<div class="wrap">
+  <div class="eyebrow">💌 MỘT MÓN QUÀ NHỎ TỪ VHNT</div>
+  <h1>Gửi cậu, một bông hoa<br>và thật nhiều yêu thương</h1>
+  <p class="sub">Có một món quà xinh xắn đang chờ cậu mở ra nè.<br>Chạm vào hộp quà nhé, cô gái của gia đình Văn hoá Nghệ thuật! 🌷</p>
+  <div class="gift-stage">
+    <div class="gift" id="gift" role="button" tabindex="0" aria-label="Mở hộp quà">
+      <div class="lid"></div><div class="bow"><i></i></div><div class="gift-box"></div>
+    </div>
+  </div>
+  <div class="gift-hint" id="hint">✧ Chạm để mở quà ✧</div>
+  <article class="card" id="letter">
+    <h2>Gửi những cô nàng xinh đẹp của gia đình Văn hoá Nghệ thuật, 💗</h2>
+    <p>Chúc cậu có một ngày 20/10 thật vui, nhận được thật nhiều yêu thương và những điều dịu dàng mà cậu xứng đáng có được. 🌷</p>
+    <p>Cảm ơn cậu vì đã chọn đồng hành cùng VHNT, vì những nỗ lực, nhiệt huyết và cả những dấu ấn riêng mà cậu đã, đang và sẽ mang đến cho đại gia đình mình. Mong rằng mỗi khi nhìn lại quãng thời gian ở đây, cậu sẽ luôn có thật nhiều kỷ niệm đẹp để nhớ, thật nhiều người thương để quý và thật nhiều lý do để mỉm cười.</p>
+    <p>Mong cậu luôn được làm điều mình yêu thích, được trân trọng vì chính con người mình và vẫn giữ được sự hồn nhiên, tự tin trên hành trình trưởng thành. Nếu có những ngày mệt mỏi, hãy cho mình thời gian nghỉ ngơi; nếu có điều muốn sẻ chia, đừng ngại mở lòng, vì cậu không cần phải lúc nào cũng mạnh mẽ một mình.</p>
+    <p>Chúc những bông hoa của nhà mình luôn rực rỡ theo cách riêng, bình an với lựa chọn của mình và hạnh phúc trên hành trình mình đi. Mong rằng chúng ta sẽ còn cùng nhau viết tiếp thật nhiều câu chuyện đẹp dưới mái nhà VHNT nhé!</p>
+    <div class="ending">Hãy cứ luôn “Vui lên tự tin lên<br> Xinh tươi như này tự tin lên<br> Kiêu lên slay lên<br> Lung linh như ngọn đèn trong đêm” nhíeeeeeeeeeee 💃✨<br><br>CHÚC CẬU LUÔN LUÔN GIỮ NIỀM ĐAM MÊ! 🌷</div>
+    <div style="text-align:center"><button class="btn" id="again">🎀 Gấp thư lại</button></div>
+  </article>
+  <div class="signature">VỚI YÊU THƯƠNG · CLB VĂN HOÁ NGHỆ THUẬT</div>
+  <div class="footer">Một chiếc ôm thật dịu dàng dành riêng cho cậu ♡</div>
+</div>
+</main>
+<script>
+const gift=document.getElementById('gift'), letter=document.getElementById('letter'), hint=document.getElementById('hint'), again=document.getElementById('again');
+function confetti(){const items=['💗','🌷','✨','♡','🎀','✿'];for(let i=0;i<28;i++){const e=document.createElement('span');e.className='confetti';e.textContent=items[Math.floor(Math.random()*items.length)];e.style.left=Math.random()*100+'vw';e.style.animationDuration=(2.4+Math.random()*2.5)+'s';e.style.fontSize=(13+Math.random()*17)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),5200)}}
+function openGift(){if(gift.classList.contains('open'))return;gift.classList.add('open');hint.classList.add('hidden');setTimeout(()=>{letter.classList.add('show');letter.scrollIntoView({behavior:'smooth',block:'start'});confetti()},420)}
+gift.addEventListener('click',openGift);gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
+again.addEventListener('click',()=>{letter.classList.remove('show');gift.classList.remove('open');hint.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
